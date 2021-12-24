@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Prime Video
+Exec=/opt/prime-on-linux/prime
+Comment=Prime Video that opens in Firefox and in fullscreen
+Terminal=false
+Icon=/opt/prime-on-linux/prime.png
+Type=Application
