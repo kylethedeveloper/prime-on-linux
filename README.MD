@@ -44,4 +44,6 @@ sudo ./install
 
 ***
 
+![*Prime Video in Application Menu*](https://user-images.githubusercontent.com/8023096/147381551-2621f666-5f20-4118-ad14-05d78e455e08.png)
+
 **Note:** Prime homepage might not load at the first time you click on the icon, which it is supposed to. So the second time and forever will work.
