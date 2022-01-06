@@ -36,7 +36,7 @@ sudo ./install
 
 ## TODO
 
-- [ ] Make `user.js` more privacy friendly.
+- [x] Make `user.js` more privacy friendly.
 - [ ] Prepare an uninstall script:
 1. Delete `/usr/share/applications/prime.desktop` file.
 2. Open up Firefox Profile Manager with `firefox -ProfileManager` command for user to delete **primeonlinux** profile.
