@@ -32,10 +32,12 @@ echo -e "\n  Checking requirements..."
 if [ `id -u` -eq 0 ]; then echo "    [✔] Run as sudo"; realUser=$SUDO_USER; else echo -e "    [x] Run as sudo\n\nYou should run this script as sudo. Aborting...\n"; exit 1; fi
 # ↑↑↑ Ref: https://askubuntu.com/a/970898/1147789 ↑↑↑
 which firefox &>/dev/null
-if [ $? -eq 0 ]; then echo "    [✔] Firefox"; else echo -e "    [x] Firefox\n\nFirefox not installed. Aborting...\n"; exit 1; fi
+if [ $? -eq 0 ]; then echo "    [✔] Firefox"; else echo -e "    [x] Firefox\n\nFirefox is not installed. Aborting...\n"; exit 1; fi
 ls /usr/bin/*session | grep gnome &>/dev/null
 # ↑↑↑ Ref: https://askubuntu.com/a/281554/1147789 ↑↑↑
 if [ $? -eq 0 ]; then echo "    [✔] GNOME"; else echo -e "    [x] GNOME\n\nDesktop Environment is not GNOME. Aborting...\n"; exit 1; fi
+which xdotool &>/dev/null
+if [ $? -eq 0 ]; then echo "    [✔] xdotool"; else echo -e "    [x] xdotool\n\nxdotool is not installed. Aborting...\n"; exit 1; fi
 
 echo -e "\n  1. Creating a new Firefox profile called 'primeonlinux'..."
 sudo -u $realUser firefox -CreateProfile primeonlinux

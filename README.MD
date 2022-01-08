@@ -60,7 +60,7 @@ sudo ./uninstall
 
 - [x] Make `user.js` more privacy friendly.
 - [x] Prepare an uninstall script.
-- [ ] Add xdotool to requirements.
+- [x] Add xdotool to requirements.
 
 ***
 
